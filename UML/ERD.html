@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD</title>
+</head>
+<body>
+    <h1>Mis on ERD?</h1>
+    <p>
+        <b>ERD</b> ehk <b>Entity-Relationship Diagram (Olemisuhete diagramm).</b> See on kõige<br>
+        laiemalt levinud metoodika andmemudelite koostamiseks ja kirjelduse esitamiseks.<br>
+    </p>
+    <h2>Kuidas andmebaasi luuakse?</h2>
+    <p>
+        Andmebaasi luuakse samm-sammult. Esmalt koostatakse andmemudel, mis kirjeldatakse nii<br>
+        detailselt, kui vaja on. Järgmiseks genereeritakse mudeli põhjal SQL-käsud <b>(Structured Query<br> Language)</b>, mille abil luuakse füüsiline andmebaas. Kui aja jooksul ilmneb vajadus andmebaasi<br>
+        struktuuri muuta, tehakse vastavad parandused või täiendused ERD-mudelisse ning selle alusel<br>
+        koostatakse uued SQL-käsud, millega viiakse andmebaasi struktuur mudeliga vastavusse.
+    </p>
+    <h2>Mis on ERD põhi-komponendid?</h2>
+    <p>
+        ERD peamised osad on <b>olemid (entity)</b> ja olemite vahelised seosed. Iga olemi sisemine<br>
+        ülesehitus koosneb atribuutidest. Seose kirjeldamisel tuuakse välja nende olemite vastavad<br>
+        atribuutide paarid, mille kaudu seos tekib ja mis määravad, kuidas kaks olemit omavahel<br>
+        seotud on. Seos saab eksisteerida alati kas kahe erineva olemi vahel või ka olemi ja tema<br>
+        enda vahel. Kui seos eksisteerib olemi ja enda vahel moodustab see suletud tsükli. 
+    </p>
+    <h2>ERD mudeli seletus ja skeem: </h2>
+    <p>
+        <ol>
+            <li>Andmemudeli graafiline esitlus - olemid, vaated ja nende vahelised seosed.</li>
+            <li>Tabelite sisemise struktuuri formaalsed kirjeldused - olemite atribuudid, atribuutide<br>
+                andmetüübid, piirangud ja indeksid.</li>
+            <li>Vaadete formaalsed kirjeldused - seletatakse lahti kuidas vaated olemite kaudu kirjelduvad</li>
+            <li>Olemite ja vaadete vaheliste seoste formaalsed kirjeldused - nii seoste väljade, kui ka<br>
+            seoste tugevuste kirjledused.</li>
+            <li>Mudeli komponentide verbaalsed kirjeldused - olemite, atribuutide, seoste, protseduuride<br>
+            jm. semantika vabatekstiline kirjeldus.</li>
+        </ol><br>
+        <img height="130" src="../Joonised/ERD-skeemid/Lihtne .png">
+        <p>
+            See skeem kirjeldab vara ja isikute vahelisi seoseid. Skeem näitab toodud olemite semantikat.
+        </p><br>
+        <img height="180" src="../Joonised/ERD-skeemid/Lihtne atribuutidega.png">
+        <p>
+            Siin joonisel on näidatud olemite atribuudid. Atribuut on olemi kirjelduse madalaim tase,<br>
+            mille kogum kirjeldab olemi struktuuri.<br>
+            Siin joonisel on ka näha, et kõikidele atribuutidele on lisatud andmetüübid, pikkused ja<br>
+            NULL/NOT NULL piirang, mis määrab, kas antud atribuut võib olla mõnes kirjes tühi (NULL)<br>
+            või mitte (NOT NULL).
+        </p><br>
+        <h3>Sümbolite seletused: </h3>
+        <img height="120" src="../Joonised/ERD-skeemid/Sümboolika_koik.png"><br>
+        <p>
+            Jonisel toodud sümbol on võetud metoodikast mida tuntakse IE(Information Engereering) all.<br>
+            Välja toodud notatsioon on enim kasutatud. 
+        </p><br>
+        <img height="160" src="../Joonised/ERD-skeemid/Symboolika_seletused.png">
+    </p>
+</body>
+</html>
