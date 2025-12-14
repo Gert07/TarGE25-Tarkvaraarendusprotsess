@@ -4,9 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prototüüpimise arendusmudel</title>
+    <style>
+    :root {
+      /* Backgrounds */
+      --bg-main: #f2f5f8;
+      --bg-surface: #ffffff;
+      --bg-muted: #e8edf2;
+
+      /* Text */
+      --text-primary: #2b2f33;
+      --text-secondary: #5f6770;
+      --text-muted: #8b949e;
+
+      /* Borders */
+      --border-subtle: #d6dde5;
+
+      /* Accents */
+      --accent-primary: #8fb6d8;
+      --accent-secondary: #a9c7e2;
+
+      /* Dark greys */
+      --dark-surface: #2f343a;
+      --dark-text: #e6e9ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: var(--dark-surface);
+      color: var(--dark-text);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .navbar a {
+      color: var(--dark-text);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      opacity: 0.85;
+    }
+
+    .navbar a:hover {
+      opacity: 1;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1100px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.6rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+      margin-bottom: 1.6rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--text-secondary);
+      text-align: left;
+      position: relative;
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+
+    ol {
+        color: var(--text-secondary);
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto 1.5rem;
+        padding-left: 1.4rem;
+    }
+
+    /* Buttons */
+    .button {
+      padding: 0.6rem 1.4rem;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background-color: var(--bg-muted);
+      color: var(--text-primary);
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #dde3ea;
+    }
+
+    .button.primary {
+      background-color: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: #ffffff;
+    }
+
+    .button.primary:hover {
+      background-color: #7aa8cf;
+    }
+
+    /* Forms */
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-subtle);
+      background-color: var(--bg-surface);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 0 2px rgba(143, 182, 216, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .back-button {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+
+        padding: 0.6rem 1.2rem;
+        border-radius: 10px;
+        border: 1px solid var(--border-subtle);
+        background-color: var(--accent-primary);
+        color: #ffffff;
+
+        cursor: pointer;
+        font-size: 0.9rem;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+    }
+
+    .back-button:hover {
+        background-color: #7aa8cf;
+    }
+  </style>
 </head>
 <body>
-    <a href="../SDLC/sdlc.html">Tagasi</a><br/>
+    <button class="back-button" onclick="window.history.back()">
+  ← Tagasi
+    </button>
     <h1>Prototüüpimise arendusmudel</h1><br/>
     <p>
         Prototüüp on esmane, lihtsustatud versioon, mille eesmärk on katsetada erinevaid<br/>

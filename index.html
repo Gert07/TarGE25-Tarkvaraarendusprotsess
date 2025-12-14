@@ -4,6 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minu Tarkvara Arendusprotsessi Ainemapp</title>
+    <style>
+    :root {
+      /* Backgrounds */
+      --bg-main: #f2f5f8;
+      --bg-surface: #ffffff;
+      --bg-muted: #e8edf2;
+
+      /* Text */
+      --text-primary: #2b2f33;
+      --text-secondary: #5f6770;
+      --text-muted: #8b949e;
+
+      /* Borders */
+      --border-subtle: #d6dde5;
+
+      /* Accents */
+      --accent-primary: #8fb6d8;
+      --accent-secondary: #a9c7e2;
+
+      /* Dark greys */
+      --dark-surface: #2f343a;
+      --dark-text: #e6e9ec;
+    }
+
+    /* Main body */
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      line-height: 1.6;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Table */
+
+    table {
+        width: 100%;
+    }
+    td {
+        color: var(--text-secondary);
+      text-align: center;
+      position: static;
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+
+    th {
+        color: var(--text-primary);
+      text-align: center;
+      position: static;
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.2rem;
+      text-decoration: underline;
+    }
+    /* Paragraphs and a href */
+    
+    p {
+      color: var(--text-secondary);
+      text-align: center;
+      position: static;
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+
+    a {
+      color: var(--text-secondary);
+      text-align: center;
+      position: static;
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.2rem;  
+    }
+
+    /* Lists */
+
+    ul {
+        color: var(--text-secondary);
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto 1.5rem;
+        padding-left: 1.4rem;
+    }
+
+    ol {
+        color: var(--text-secondary);
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto 1.5rem;
+        padding-left: 1.4rem;
+    }
+
+    /* Back Button */
+
+    .back-button {
+        position: fixed;
+        top: 2rem;
+        left: 2rem;
+
+        padding: 0.6rem 1.2rem;
+        border-radius: 10px;
+        border: 1px solid var(--border-subtle);
+        background-color: var(--accent-primary);
+        color: #ffffff;
+
+        cursor: pointer;
+        font-size: 0.9rem;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+    }
+
+    .back-button:hover {
+        background-color: #5496cf;
+    }
+  </style>
 </head>
 <body>
     <h1>Tarkvara Arendusprotsessi tunni raames koostatud ainemapp</h1>
@@ -13,22 +130,22 @@
     </p>
     <h2>Tarkvara Arendusprotsess:</h2>
     <h3>Teooria:</h3>
-    <a href="./SDLC/sdlc.html">Üldiselt - mis see on.</a>
-    <a href="./CASE/index.html">CASE-vahendid</a>
-    <a href="./UML/index.html">Unified Modeling Language</a>
-    <a href="./DOCS/index.html">Dokumentatsioon</a>
+    <a href="./SDLC/sdlc.html">Üldiselt - mis see on.</a><br>
+    <a href="./CASE/index.html">CASE-vahendid</a><br>
+    <a href="./UML/index.html">Unified Modeling Language</a><br>
+    <a href="./DOCS/index.html">Dokumentatsioon</a><br>
     <h3>Praktiline rakendus</h3>
-    <a href="./BTC/index.html">Bitcoin calculator</a>
-    <a href="./PNC/index.html">Tooted ja kategooriad</a>
+    <a href="./BTC/index.html">Bitcoin calculator</a><br>
+    <a href="./PNC/index.html">Tooted ja kategooriad</a><br>
     <br/>
     ------------------------------------------
     <h2>Kes ma olen?</h2>
     <table>
         <tr>
-            <td>Minu nimi:</td>
-            <td>Mida ma teen:</td>
-            <td>Kust ma tulen:</td>
-            <td>Pilt</td>
+            <th>Minu nimi:</th>
+            <th>Mida ma teen:</th>
+            <th>Kust ma tulen:</th>
+            <th>Pilt</th>
         </tr>
         <tr>
             <td>Martin Gert Puura</td>
