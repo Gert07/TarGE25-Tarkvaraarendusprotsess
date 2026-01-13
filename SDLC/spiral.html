@@ -4,169 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiraalne arednusmudel</title>
-    <style>
-    :root {
-      /* Backgrounds */
-      --bg-main: #f2f5f8;
-      --bg-surface: #ffffff;
-      --bg-muted: #e8edf2;
-
-      /* Text */
-      --text-primary: #2b2f33;
-      --text-secondary: #5f6770;
-      --text-muted: #8b949e;
-
-      /* Borders */
-      --border-subtle: #d6dde5;
-
-      /* Accents */
-      --accent-primary: #8fb6d8;
-      --accent-secondary: #a9c7e2;
-
-      /* Dark greys */
-      --dark-surface: #2f343a;
-      --dark-text: #e6e9ec;
-    }
-
-    /* Main body */
-
-    body {
-      margin: 0;
-      font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-      background-color: var(--bg-main);
-      color: var(--text-primary);
-      line-height: 1.6;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      padding-top: 60px;
-    }
-
-    /* Table */
-
-    table {
-        width: 100%;
-    }
-    td {
-        color: var(--text-secondary);
-      text-align: center;
-      position: static;
-      padding-bottom: 0.9rem;
-      margin-bottom: 1.2rem;
-    }
-
-    th {
-        color: var(--text-primary);
-      text-align: center;
-      position: static;
-      padding-bottom: 0.9rem;
-      margin-bottom: 1.2rem;
-      text-decoration: underline;
-    }
-    /* Paragraphs and a href */
-    
-    p {
-      color: var(--text-secondary);
-      text-align: center;
-      position: static;
-      padding-bottom: 0.9rem;
-      margin-bottom: 1.2rem;
-    }
-
-    a {
-      color: var(--text-secondary);
-      text-align: center;
-      position: static;
-      padding-bottom: 0.9rem;
-      margin-bottom: 1.2rem;  
-    }
-
-    /* Lists */
-
-    ul {
-        color: var(--text-secondary);
-        display: inline-block;
-        text-align: left;
-        margin: 0 auto 1.5rem;
-        padding-left: 1.4rem;
-    }
-
-    ol {
-        color: var(--text-secondary);
-        display: inline-block;
-        text-align: left;
-        margin: 0 auto 1.5rem;
-        padding-left: 1.4rem;
-    }
-
-    /* Back Button */
-
-    .back-button {
-        position: fixed;
-        top: 2rem;
-        left: 2rem;
-
-        padding: 0.6rem 1.2rem;
-        border-radius: 10px;
-        border: 1px solid var(--border-subtle);
-        background-color: var(--accent-primary);
-        color: #ffffff;
-
-        cursor: pointer;
-        font-size: 0.9rem;
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-        z-index: 1000;
-    }
-
-    .back-button:hover {
-        background-color: #5496cf;
-    }
-  </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <button class="back-button" onclick="window.history.back()">
   ← Tagasi
     </button>
     <h1>Spiraalne arendusmudel</h1>
-    <p>Spiraalne arendusmudel on samuti üks iteratiivsetest arendusmudeli tüüpidest. Protsessi kulgemist<br/>
-        kujutatakse spiraalina. Esimene kordus on süsteemi teostatavuse uurimine, teine kordus on nõudmiste<br/>
-        kirjeldamine ja sealt edasi tegeletakse kavandamisega. Mitu korust on enamjaolt seatud tarkvara<br/>
-        realiseerimisega, kus selle ehitamine toimub inkrementaalselt. Spiraali kordusi ei tohiks võrdsustada<br/>
-        tavapäraste arendusprotsessi faasidega. Kõik kordused on jaotatud 3 kuni 6-te sektorisse. Kordus algab<br/>
-        lähima eesmärgi kavandamisega ja riskide hindamisega ning löppeb kliendiga - ehk eesmärk peab saama<br/>
-        täidetud ja kontrollitud.
-    </p><br/><br/>
+        <p>Spiraalne arendusmudel on samuti üks iteratiivsetest arendusmudeli tüüpidest. Protsessi kulgemist
+            kujutatakse spiraalina. Esimene kordus on süsteemi teostatavuse uurimine, teine kordus on nõudmiste
+            kirjeldamine ja sealt edasi tegeletakse kavandamisega. Mitu korust on enamjaolt seatud tarkvara
+            realiseerimisega, kus selle ehitamine toimub inkrementaalselt. Spiraali kordusi ei tohiks võrdsustada
+            tavapäraste arendusprotsessi faasidega. Kõik kordused on jaotatud 3 kuni 6-te sektorisse. Kordus algab
+            lähima eesmärgi kavandamisega ja riskide hindamisega ning löppeb kliendiga - ehk eesmärk peab saama
+            täidetud ja kontrollitud.
+        </p>
     <h2>Eesmärkide saavutamine</h2>
-    <p>
-        Selles etapis pannakse paika antud korduste eesmärgid ja tingimused, kirjeldatakse oodatavad<br/>
-        tulemused ning koostatakse tööplaan. Samal ajal hinnatakse võimalikke ohukohti ja töötatakse välja<br/>
-        erinevad lahenduskäigud juhuks, kui riskid peaksid realiseeruma.
-    </p><br/>
+        <p>
+            Selles etapis pannakse paika antud korduste eesmärgid ja tingimused, kirjeldatakse oodatavad
+            tulemused ning koostatakse tööplaan. Samal ajal hinnatakse võimalikke ohukohti ja töötatakse välja
+            erinevad lahenduskäigud juhuks, kui riskid peaksid realiseeruma.
+        </p>
     <h2>Riskide hindamine ja maandamine</h2>
-    <p>
-        Selles etapis otsitakse riske ja iga leitud riski jaoks tehakse analüüs. Uuritakse riskide tähtsust<br/>
-        ja võetakse ette riskide maandamine.
-    </p><br/>
+        <p>
+            Selles etapis otsitakse riske ja iga leitud riski jaoks tehakse analüüs. Uuritakse riskide tähtsust
+            ja võetakse ette riskide maandamine.
+        </p>
     <h2>Arendus ja valideerimine</h2>
-    <p>
-        Selles etapis valitakse kõige produktiivsem arendusmudel, mis tuleneb hinnatud riskidest (mudel<br/>
-        peab aitama riske vähendada). Suurima riski jaoks on soovitatav teha prototüübi tegemeine.
-    </p><br/>
+        <p>
+            Selles etapis valitakse kõige produktiivsem arendusmudel, mis tuleneb hinnatud riskidest (mudel
+            peab aitama riske vähendada). Suurima riski jaoks on soovitatav teha prototüübi tegemeine.
+        </p>
     <h2>Planeerimne</h2>
-    <p>
-        Selles etapis vaadatakse projekt üle ja otsustatakse kas jätkata järgmisel kordusel. Eeldusel, et<br/>
-        otsustatakse jätkata, siis tehakse plaan järgmise faasi jaoks.
-    </p><br/>
-    <img src="../Pildid/Spiraalmudel.png"/>
-    <p><i>Spiraalmudel (Boehm 1988)</i></p><br/><br/>
-    <p>
-        Selle mudeli peamine erinevus võrreldes teiste arendusmudelitega on see, et see keskendub süvitsi<br/>
-        risikde tuvastamisele ja nendega tegelemisele. Risk tähendab olukorda, kus midagi võib valesti minna.<br/>
-        Kui riskid peaksid realiseeruma, võivad projekti tähtaeg ja maksumus kasvada, mistõttu on oluline neid<br/>
-        ette näha ja rakendada meetodeid riskide vähendamiseks.<br/>
-    </p>
-    <p>Viited infole:
-    <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1223_spiraalmudel.html">e-õppearhiiv</a>
-    </p>
+        <p>
+            Selles etapis vaadatakse projekt üle ja otsustatakse kas jätkata järgmisel kordusel. Eeldusel, et
+            otsustatakse jätkata, siis tehakse plaan järgmise faasi jaoks.
+        </p>
+        <img src="../Pildid/Spiraalmudel.png"/>
+        <p><i>Spiraalmudel (Boehm 1988)</i></p>
+        <p>
+            Selle mudeli peamine erinevus võrreldes teiste arendusmudelitega on see, et see keskendub süvitsi
+            risikde tuvastamisele ja nendega tegelemisele. Risk tähendab olukorda, kus midagi võib valesti minna.
+            Kui riskid peaksid realiseeruma, võivad projekti tähtaeg ja maksumus kasvada, mistõttu on oluline neid
+            ette näha ja rakendada meetodeid riskide vähendamiseks.
+        </p>
+  <p>Viited infole:
+  <a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1223_spiraalmudel.html">e-õppearhiiv</a>
+  </p>
 </body>
 </html>
