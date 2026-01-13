@@ -35,6 +35,14 @@
       padding-top: 60px;
     }
 
+    /* Main centered "container" */
+
+    article {
+      max-width: 105ch;   
+      margin: auto;
+      padding: 2rem;
+    }
+
     /* Table */
 
     table {
@@ -42,7 +50,7 @@
     }
     td {
         color: var(--text-secondary);
-      text-align: center;
+      text-align: left;
       position: static;
       padding-bottom: 0.9rem;
       margin-bottom: 1.2rem;
@@ -50,7 +58,7 @@
 
     th {
         color: var(--text-primary);
-      text-align: center;
+      text-align: left;
       position: static;
       padding-bottom: 0.9rem;
       margin-bottom: 1.2rem;
@@ -60,7 +68,7 @@
     
     p {
       color: var(--text-secondary);
-      text-align: center;
+      text-align: left;
       position: static;
       padding-bottom: 0.9rem;
       margin-bottom: 1.2rem;
@@ -68,7 +76,7 @@
 
     a {
       color: var(--text-secondary);
-      text-align: center;
+      text-align: left;
       position: static;
       padding-bottom: 0.9rem;
       margin-bottom: 1.2rem;  
@@ -114,3 +122,5 @@
     .back-button:hover {
         background-color: #5496cf;
     }
+
+    /* 
